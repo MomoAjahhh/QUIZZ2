@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: white; /* Sesuai permintaan: luar area abu-abu berwarna putih */
+}
+
+.grey-wrapper {
+    background-color: #f0f0f0; /* Warna abu-abu solid */
+    padding: 20px;
+    border-radius: 0px; /* Sudut kotak tegas */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); /* Bayangan agar lebih jelas */
+}
+
+.controls-area {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.controls-area input[type="text"],
+.controls-area input[type="number"] {
+    padding: 8px 10px;
+    border: 1px solid #c9c9c9;
+    background-color: white;
+    border-radius: 3px;
+    font-size: 14px;
+    width: 170px;
+}
+
+.controls-area input[type="text"]::placeholder,
+.controls-area input[type="number"]::placeholder {
+    color: #888;
+}
+
+.controls-area button {
+    padding: 8px 18px;
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.controls-area button:hover {
+    background-color: #1565c0;
+}
+
+.chart-white-box {
+    background-color: white;
+    border-radius: 0px; /* Sudut kotak tegas */
+    /* border: 1px solid #dcdcdc; (opsional, jika ingin border di kotak putihnya) */
+}
+
+#myChart {
+    display: block;
+    width: 700px !important;
+    height: 400px !important;
+}
